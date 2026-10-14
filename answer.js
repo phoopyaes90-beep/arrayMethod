@@ -1,0 +1,13 @@
+import orders from "./order.js";
+import { getPaidOrders } from "./paidOrder.js";
+import { totalRevenue } from "./totalRev.js";
+import { revenueByCity } from "./reveCity.js";
+import { topCustomers } from "./topCus.js";
+import { formatMMK } from "./format.js";
+import { toSummary } from "./summary.js";
+console.log(getPaidOrders(orders));
+console.log(totalRevenue(orders));
+console.log(revenueByCity(orders));
+console.log(topCustomers(orders));
+console.log(formatMMK(totalRevenue(orders)));
+console.log(toSummary(orders));
